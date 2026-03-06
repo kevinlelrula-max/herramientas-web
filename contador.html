@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contador de Palabras</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Contador de Palabras</h2>
+
+<textarea id="texto" rows="10" cols="40"></textarea>
+
+<br><br>
+
+<button onclick="contar()">Contar</button>
+
+<p id="resultado"></p>
+
+<script>
+
+function contar(){
+
+let texto = document.getElementById("texto").value;
+
+let palabras = texto.trim().split(/\s+/).length;
+
+document.getElementById("resultado").innerHTML =
+"Palabras: " + palabras;
+
+}
+
+</script>
+
+</body>
+</html>
