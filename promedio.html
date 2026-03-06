@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora de Promedio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Calculadora de Promedio</h2>
+
+<input type="number" id="n1">
+<input type="number" id="n2">
+<input type="number" id="n3">
+
+<button onclick="calcular()">Calcular</button>
+
+<p id="resultado"></p>
+
+<script>
+
+function calcular(){
+
+let n1 = parseFloat(document.getElementById("n1").value);
+let n2 = parseFloat(document.getElementById("n2").value);
+let n3 = parseFloat(document.getElementById("n3").value);
+
+let promedio = (n1+n2+n3)/3;
+
+document.getElementById("resultado").innerHTML =
+"Promedio: " + promedio;
+
+}
+
+</script>
+
+</body>
+</html>
